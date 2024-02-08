@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <h1>Weather API Demo</h1>
+      <h1>Weather API</h1>
       <InputForm setCity={setCity} handleChange={handleChange} />
       <WeatherComponent cityCode={city} />
     </>
