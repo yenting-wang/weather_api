@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherComponent from "./WeatherComponent";
+import styles from './index.css'
 
 function App() {
   const [city, setCity] = useState("130000");
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>Weather API</h1>
+      <h1>天気予報</h1>
       <InputForm setCity={setCity} handleChange={handleChange} />
       <WeatherComponent cityCode={city} />
     </>
